@@ -1,0 +1,17 @@
+---
+title: "Variational AutoEncoders"
+layout: post
+date: 2020-07-21 09:43
+#image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- ELBO
+- VAE
+- re-parametrization trick
+category: blog
+author: nazsepahvand
+description: Markdown summary with different options
+---
+
+<span class="evidence">In this post a summary of the idea behind variational autoencoders is presented.</span>
+

@@ -1,0 +1,18 @@
+---
+layout: page
+title: Projects
+---
+<section class="list">
+    {% for post in site.posts %}
+        {% if post.projects %}
+            <div class="item {% if post.star %}star{% endif %}">
+                <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
+                    <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
+                    <h3 class="title">{{ post.title }}</h3>
+                </a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</section>
+
+My interest lies at the intersection of Deep Learning and Graphical Modeling. Particularly, I am interested in appling Bayesian Deep Learning methods in healthcare. The primary focus of my PhD work is on making probabilistic prediction about the future of the disease in patients with Multiple Scriosis usinglongitunidal MR Images. In addition, due to the scarcity of data in my field which could potentially impact the performance of the model significantly, I am constantly looking for unsupervised methods that can be incorporated in my model. At the moment I am looking into how I can include methods from knowledge distilation and domain adaption in my work. Finally,
